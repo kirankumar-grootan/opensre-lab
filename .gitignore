@@ -1,0 +1,14 @@
+# Secrets and local-only material
+.env
+runs/
+.egm/
+.tools/
+concepts_brief.md
+design_draft.md
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+uv.lock
