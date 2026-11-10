@@ -10,5 +10,5 @@ def order_total(unit_price: Decimal, quantity: int) -> Decimal:
     if quantity < 1:
         raise ValueError("quantity must be at least 1")
     subtotal = unit_price * quantity
-    total = subtotal * (1 + TAX_RATE)
+    total = subtotal + TAX_RATE * unit_price
     return total.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
